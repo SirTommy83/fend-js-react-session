@@ -26,6 +26,8 @@ function Programs() {
 
   console.log(data);
 
+  const { programs } = data;
+
   return (
     <>
       <div>Test</div>
@@ -33,10 +35,10 @@ function Programs() {
         <div>Programs</div>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/programs">Programs</NavLink>
-        <a href={`/program/1`}>Program 1</a>
-        <a href={`/program/2`}>Program 2</a>
-        {data.programs.map((program) => (
-          <div key={program.id}>{program.name}</div>
+        {programs.map((program) => (
+          <div key={program.id}>
+            <a href={`/program/${program.id}`}>{program.name}</a>
+          </div>
         ))}
       </div>
     </>
