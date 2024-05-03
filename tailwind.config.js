@@ -4,6 +4,12 @@ module.exports = {
     extend: {
       colors: {
         "fitness-color-dark": "#202430",
+        "fitness-color-medium": "#3A4151",
+        "fitness-color-light": "#FBFBFB",
+        "fitness-color-gradient": "",
+        "fitness-color-gradient2": "#3EF3E8",
+        "fitness-color-gradient3": "",
+
       },
     },
   },
