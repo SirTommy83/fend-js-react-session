@@ -9,7 +9,6 @@ module.exports = {
         "fitness-color-gradient": "",
         "fitness-color-gradient2": "#3EF3E8",
         "fitness-color-gradient3": "",
-
       },
     },
   },
