@@ -15,9 +15,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apollo/client@npm:^3.9.10":
-  version: 3.9.10
-  resolution: "@apollo/client@npm:3.9.10"
+"@apollo/client@npm:latest":
+  version: 3.10.8
+  resolution: "@apollo/client@npm:3.10.8"
   dependencies:
     "@graphql-typed-document-node/core": ^3.1.1
     "@wry/caches": ^1.0.0
@@ -27,7 +27,7 @@ __metadata:
     hoist-non-react-statics: ^3.3.2
     optimism: ^0.18.0
     prop-types: ^15.7.2
-    rehackt: 0.0.6
+    rehackt: ^0.1.0
     response-iterator: ^0.2.6
     symbol-observable: ^4.0.0
     ts-invariant: ^0.10.3
@@ -48,7 +48,7 @@ __metadata:
       optional: true
     subscriptions-transport-ws:
       optional: true
-  checksum: 4299d998d4a9085b67f8c0e622b14e5ba998260ecc46315a434facfe6d2e6ec68aeb1ee6420ec37f69868235c7e1c6cafc54a3d0d039d578efc58d351bcbebe1
+  checksum: 965e95389bdbde8aa5f542f11860fd930438f635560c766c716f186d5a9d6c5f0bfb31088cf28150c4f3969191030f1bbc0254418738a5737568108e96ffd815
   languageName: node
   linkType: hard
 
@@ -681,6 +681,24 @@ __metadata:
   version: 1.16.0
   resolution: "@remix-run/router@npm:1.16.0"
   checksum: c8afdf90b19a5a9dfb14425d57de029cadf4bbb51d668885b10df5ea2f82279d7552a9939274b519de0da40550f48e5a6c07e5d4049dbd3838fcaa29819bd641
+  languageName: node
+  linkType: hard
+
+"@remix-run/router@npm:1.17.0":
+  version: 1.17.0
+  resolution: "@remix-run/router@npm:1.17.0"
+  checksum: a801f605d6ff9fdc53676403cd9441f713251fbc23dcaf65c9337b3846e86db9c1b1fc9eee3c0f7142e3e1f7ed44efd427278138c3be9eeb7dd7e693347c35ab
+  languageName: node
+  linkType: hard
+
+"@tailwindcss/forms@npm:^0.5.7":
+  version: 0.5.7
+  resolution: "@tailwindcss/forms@npm:0.5.7"
+  dependencies:
+    mini-svg-data-uri: ^1.2.3
+  peerDependencies:
+    tailwindcss: ">=3.0.0 || >= 3.0.0-alpha.1"
+  checksum: 406fe102a44f89d896c9a945b705a40b926520472ffd8613d9fbfb9e63c23d600629f54096b8ba78316ce1278b79ae6070c166b820328256cf359e80f9d2146f
   languageName: node
   linkType: hard
 
@@ -2054,7 +2072,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "fend-react-boilerplate@workspace:."
   dependencies:
-    "@apollo/client": ^3.9.10
+    "@apollo/client": latest
+    "@tailwindcss/forms": ^0.5.7
     "@vitejs/plugin-react": ^3.1.0
     apollo-client: ^2.6.10
     autoprefixer: ^10.4.14
@@ -2071,7 +2090,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-router: ^6.23.0
-    react-router-dom: ^6.23.0
+    react-router-dom: latest
     tailwindcss: ^3.3.1
     vite: ^4.2.1
     vite-plugin: ^0.0.0
@@ -3080,6 +3099,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mini-svg-data-uri@npm:^1.2.3":
+  version: 1.4.4
+  resolution: "mini-svg-data-uri@npm:1.4.4"
+  bin:
+    mini-svg-data-uri: cli.js
+  checksum: 997f1fbd8d59a70f03761e18626d335197a3479cb9d1ff75678e4b64b864d32a0b8fc18115eabde035e5299b8b4a354a78e57dd6ac10f9d604162a6170898d09
+  languageName: node
+  linkType: hard
+
 "minimatch@npm:^3.0.4, minimatch@npm:^3.0.5, minimatch@npm:^3.1.2":
   version: 3.1.2
   resolution: "minimatch@npm:3.1.2"
@@ -3718,20 +3746,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^6.23.0":
-  version: 6.23.0
-  resolution: "react-router-dom@npm:6.23.0"
+"react-router-dom@npm:latest":
+  version: 6.24.0
+  resolution: "react-router-dom@npm:6.24.0"
   dependencies:
-    "@remix-run/router": 1.16.0
-    react-router: 6.23.0
+    "@remix-run/router": 1.17.0
+    react-router: 6.24.0
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: 071b4859fa97d501e4de68fdcf46bd7c88138e65149dadd9557559e4acc7ca31d091af24844c7f305625969cc20a1970450a7cde229642c4e654ca14346a982b
+  checksum: 6b40474070661d60b7a237756db7d27e7925546981a2325673519dab7cb15184ad490f092f1f9e947aa414b54be8c1f50f2ecb175e2b57e4c0d7d012a170d48d
   languageName: node
   linkType: hard
 
-"react-router@npm:6.23.0, react-router@npm:^6.23.0":
+"react-router@npm:6.24.0":
+  version: 6.24.0
+  resolution: "react-router@npm:6.24.0"
+  dependencies:
+    "@remix-run/router": 1.17.0
+  peerDependencies:
+    react: ">=16.8"
+  checksum: c58073711357500f7b2adb8968f6d160e3f2fbe2f9d9482648e70ea96910438886d4e713d420c548c4a7d1ad30db15bc9a4b952bb1cbc14dd75a209cf286f49b
+  languageName: node
+  linkType: hard
+
+"react-router@npm:^6.23.0":
   version: 6.23.0
   resolution: "react-router@npm:6.23.0"
   dependencies:
@@ -3798,9 +3837,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rehackt@npm:0.0.6":
-  version: 0.0.6
-  resolution: "rehackt@npm:0.0.6"
+"rehackt@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "rehackt@npm:0.1.0"
   peerDependencies:
     "@types/react": "*"
     react: "*"
@@ -3809,7 +3848,7 @@ __metadata:
       optional: true
     react:
       optional: true
-  checksum: 25df31d4fc1198b5beba68ec3c960119f120aeba4f7a6f686b087ddbfdd45753ea74b6daf66523c8b6db844429eaed516e0f6f37f657fdcc96334e5ae9efee98
+  checksum: 2c3bcd72524bf47672640265e79cba785e0e6837b9b385ccb0a3ea7d00f55a439d9aed3e0ae71e991d88e0d4b2b3158457c92e75fff5ebf99cd46e280068ddeb
   languageName: node
   linkType: hard
 

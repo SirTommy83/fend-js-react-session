@@ -6,11 +6,13 @@ module.exports = {
         "fitness-color-dark": "#202430",
         "fitness-color-medium": "#3A4151",
         "fitness-color-light": "#FBFBFB",
-        "fitness-color-gradient": "",
+        "fitness-color-gradient": "#FF99C3",
         "fitness-color-gradient2": "#3EF3E8",
-        "fitness-color-gradient3": "",
+        "fitness-color-gradient3": "#3A4AE4",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };

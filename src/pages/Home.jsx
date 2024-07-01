@@ -4,11 +4,12 @@ import logo from "../logo.svg";
 import "../App.css";
 import Button from "../components/Button";
 import { ThemeContext } from "../main";
+import Header from "../components/Header"
 
 const products = [
   {
     id: 0,
-    productName: "Äthiopien",
+    productName: "Deutschland",
     price: 690,
     description:
       "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
@@ -50,9 +51,10 @@ function App() {
 
   return (
     <>
-      <div>Test</div>
+      <div>Test2</div>
       <div className="App">
         <header className="App-header">
+          <Header />
           <NavLink to="/">Home</NavLink>
           <NavLink to="/programs">Programs</NavLink>
           <img src={logo} className="App-logo" alt="logo" ref={imgRef} />

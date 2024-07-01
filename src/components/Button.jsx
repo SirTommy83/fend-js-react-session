@@ -8,7 +8,7 @@ const Button = ({ color, clickHandler, count }) => {
       type="button"
       onClick={clickHandler}
     >
-      count is: {count}
+      Titel des Programms
     </button>
   );
 };

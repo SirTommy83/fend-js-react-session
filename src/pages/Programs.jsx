@@ -30,7 +30,7 @@ function Programs() {
 
   return (
     <>
-      <div>Test</div>
+      <div>Browse Programs</div>
       <div className="App">
         <div>Programs</div>
         <NavLink to="/">Home</NavLink>

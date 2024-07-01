@@ -38,7 +38,7 @@ function Program() {
 
   return (
     <>
-      <div>Test</div>
+      <div>Browse Program</div>
       <div className="App">
         <div>{program.name}</div>
         <NavLink to="/">Home</NavLink>
