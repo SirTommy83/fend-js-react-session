@@ -58,7 +58,7 @@ function App() {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/programs">Programs</NavLink>
           <img src={logo} className="App-logo" alt="logo" ref={imgRef} />
-          <h1 className="text-3xl font-bold underline">Hello world!</h1>
+          <h1 className="text-xl font-bold">Dein Workout heute</h1>
           <p>
             <Button
               color="blue"
