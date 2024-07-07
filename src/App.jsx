@@ -7,7 +7,7 @@ import { ThemeContext } from "./main";
 const products = [
   {
     id: 0,
-    productName: "GERMANY",
+    productName: "Äthopien",
     price: 690,
     description:
       "MAYA Hochlandkaffee von MAYA Kaffee 1991 wird an den Hängen der Sierra Madre de Chiapas angebaut, ein Gebirgszug, der sich entlang der Pazifikküste im Süden Mexikos erstreckt. Hier haben sich indianische Kleinbauern mit Anbauflächen von ein bis drei Hektar Land in Kooperativen zusammengeschlossen und verzichten komplett auf Industriedünger und Pestizide. Schonend geröstet, entwickelt diese einzigartige Spezialität ein überraschend vielschichtiges Aromenspiel mit deutlichen Noten von Haselnuss. Als klassischer Aufguss ist unser MAYA Filterkaffee besonders ergiebig. 100% BIO aus kontrolliert ökologischem Anbau. DE-ÖKO-003 / Nicht-EU-Landwirtschaft.",
@@ -53,7 +53,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" ref={imgRef} />
-          <h1 className="text-3xl font-bold underline">Hello world!</h1>
+          <h1 className="text-3xl font-bold underline">Hello Fitness-App!</h1>
           <p>
             <Button
               color="blue"
@@ -62,7 +62,7 @@ function App() {
             />
           </p>
           {count > 5 && <div>COUNT IS 5 NOW</div>}
-          <p className="text-fitness-color-dark">
+          <p className="text-fitness-color-light">
             Edit <code>App.jsx</code> and save to test HMR updates.
           </p>
           {products.map((product, i) => (

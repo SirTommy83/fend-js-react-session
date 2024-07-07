@@ -1,5 +1,7 @@
 import { useLocation, useParams } from "react-router-dom";
 import { useQuery, gql } from "@apollo/client";
+import "../App.css";
+import Footer from "../components/Footer";
 
 import NavLink from "../components/NavLink";
 
@@ -37,14 +39,17 @@ function Program() {
   const { program } = data;
 
   return (
-    <>
-      <div>Browse Program</div>
-      <div className="App">
-        <div>{program.name}</div>
+    <div className="App">
+      <div className="font-poppins font-bold text-fitness-color-light text-24px text-left">
+        Browse Program
+      </div>
+      <div>
+        <div className="text-fitness-color-light text-24px">{program.name}</div>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/programs">Programs</NavLink>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 
