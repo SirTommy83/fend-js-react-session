@@ -9,13 +9,11 @@ const Button = ({ color, clickHandler }) => {
   return (
     <NavLink to="/programs">
       <button
-        className={`${
-          color ? colors[color] : "bg-fitness-color-gradient3"
-        } w-[23.5rem] h-[13.5rem] rounded-[1.9rem]`}
+        className="bg-fitness-color-medium font-bold text-h2 w-[21.5rem] h-[13.5rem] rounded-[1.9rem]"
         type="button"
         onClick={clickHandler}
       >
-        Wähle dein Workout
+        Titel des Programms
       </button>
     </NavLink>
   );

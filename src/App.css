@@ -26,13 +26,13 @@
   }
 }
 
-.App-header {
+.App {
   background-color: #202430;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: "white";
 }
@@ -58,7 +58,8 @@ button {
   weight: 23.5rem;
   height: 13.5rem;
   border-radius: 1.9rem;
-  margin: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .invisible-button {

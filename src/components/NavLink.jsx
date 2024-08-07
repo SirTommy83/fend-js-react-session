@@ -1,6 +1,6 @@
 import { NavLink as Link } from "react-router-dom";
 
-function NavLink({ children, to, ...rest }) {
+export default function NavLink({ children, to, ...rest }) {
   return (
     <Link
       to={to}
@@ -11,5 +11,3 @@ function NavLink({ children, to, ...rest }) {
     </Link>
   );
 }
-
-export default NavLink;

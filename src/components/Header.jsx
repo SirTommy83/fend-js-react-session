@@ -30,8 +30,8 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-fitness-color-dark text-fitness-color-light flex items-center">
-      <h1 className="font-poppins text-36px font-bold text-left w-full">
+    <div className="bg-fitness-color-dark text-fitness-color-light flex w-full p-4">
+      <h1 className="font-poppins text-h1 font-bold text-left">
         Hi {isNameSubmitted && isEditing ? `${userName}!` : ""}
       </h1>
       {!isNameSubmitted || isEditing ? (
@@ -42,7 +42,7 @@ export default function Header() {
               value={userName}
               onChange={handleNameChange}
               placeholder="Name!"
-              className="bg-[#282c34] text-fitness-color-light border-none text-3xl font-bold outline-none placeholder-white"
+              className="bg-fitness-color-dark text-fitness-color-light font-poppins border-none text-h1 font-bold outline-none placeholder-white"
               size={userName.length === 0 ? "5" : userName.length}
             />
           </label>
@@ -51,7 +51,7 @@ export default function Header() {
       ) : (
         <button
           onClick={handleNameClick}
-          className="text-36px font-bold font-poppins ml-2 bg-transparent border-none text-fitness-color-light cursor-pointer"
+          className="text-h1 font-bold font-poppins ml-2 bg-transparent border-none text-fitness-color-light cursor-pointer"
         >
           {userName}
         </button>
